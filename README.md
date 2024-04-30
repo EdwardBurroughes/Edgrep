@@ -8,13 +8,13 @@ go build -o /usr/local/bin/edgrep
 ```
 ## args:
 ```
-       pattern
-       filepath
+pattern
+filepath
 [-i    case sensitivity flag]
 [-r    recursive flag]
 [-v    exclude a word]
 ```
-**Usage**
+## Usage:
 basic usage:
 ```
 edgrep "" <filepath>
@@ -25,11 +25,11 @@ edgrep -r "<MY_PATTERN>" <DIR_PATH>
 ```
 
 ## testing:
-- unit tests:
+unit tests:
 ```
 go test -v -tags=unit 
 ```
-- integration tests:
+integration tests:
 ```
 go test -v -tags=integration
 ```
